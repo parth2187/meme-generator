@@ -1,5 +1,7 @@
 // JavaScript By MediocreCoder192
 
+console.log("Script linked");
+
 function fetchMemes() {
 	// function fetchMemes is to be called when user clicks the button
 
