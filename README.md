@@ -18,5 +18,5 @@ To open this project, click [here.](https://mediocregun.netlify.app/)
 
 ## List Of Features
 
-- 
-- 
+- Uses reddit's r/memes api
+- Added Pagination (Generate new memes on every click)
