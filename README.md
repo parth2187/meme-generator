@@ -9,10 +9,9 @@
 
 ## Deployment
 
-To open this project, click [here.](https://coffeenomad.github.io/https://github.com/CometCoder192/deckOfCards/)
-
+To open this project, click [here.](https://mediocregun.netlify.app/)
 ```bash
-  https://github.com/CometCoder192/deckOfCards/
+  => https://mediocregun.netlify.app/
 ```
 
 
