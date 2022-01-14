@@ -2,18 +2,26 @@
 
 console.log("Script linked");
 
+var after = "" // For Pagination (button fetches more memes when clicked)
+
+
 function fetchMemes() {
 	// function fetchMemes is to be called when user clicks the button
 
 	let parent = document.createElement('div'); // creates a div 
 	parent.id = 'memes';	// gives the div an id of 'memes'
-
-	let url = `https://www.reddit.com/r/memes.json`; // API url
-
+	let url = `https://www.reddit.com/r/memes.json?after=${after}`; // API url
+	
+	// If there is a div with id memes, it removes it when fetched
+	if(document.getElementById('memes')) {
+ 			document.getElementById('memes').remove()
+ 		}
+ 		
 	// fetch() gets the data for us
 	fetch(url)
  		.then(response => response.json())
  		.then(body => {
+ 			after = body.data.after;
  			for(let i = 0; i < body.data.children.length; i++) {
  				if (body.data.children[i].data.post_hint === 'image') {
 
