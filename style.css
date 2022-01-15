@@ -24,7 +24,7 @@ img {
 }
 
 img:hover {
-  box-shadow: 5px 5px 100px 5px #0ff;
+  box-shadow: 5px 5px 20px 15px #000;
 }
 
 .container {
