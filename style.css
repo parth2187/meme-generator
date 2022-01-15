@@ -13,12 +13,18 @@ body {
 #memes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 100vh;
+  grid-gap: 2.5em;
+  width: 80%;
+  grid-auto-flow: row;
 }
 
 img {
-  width: 30rem;
-  padding: 2rem 5rem;
+  max-width: 25em;
+  cursor: pointer;
+}
+
+img:hover {
+  box-shadow: 5px 5px 100px 5px #0ff;
 }
 
 .container {
@@ -29,13 +35,29 @@ img {
 }
 
 button {
-  padding: 0.5em;
-  background-color: red;
-  color: white;
-  font-size: 1.5rem;
+  display: inline-block;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
   cursor: pointer;
-  border: none;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
   border-radius: 5px;
+  border: none;
+  background: #ef233c;
+  box-shadow: 0 5px #d90429;
+}
+
+button:hover {
+  box-shadow: 0 3px #d90429;
+  top: 1px;
+}
+button:active {
+  box-shadow: 0 0 #d90429;
+  top: 5px;
 }
 
 h4 {
