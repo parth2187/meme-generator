@@ -29,9 +29,18 @@ img:hover {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 20vh;
+}
+
+.container > p {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 button {
