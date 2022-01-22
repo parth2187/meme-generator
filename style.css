@@ -1,29 +1,28 @@
 /* css resets */
 * {
-  margin: 0;
-  padding: 0;
+  margin:auto;
   box-sizing: border-box;
 }
 
 body {
   background-color: #03191e;
-  width: 100%;
-  overflow-x: hidden;
+  width: 102.5%;
+  overflow-x:hidden;
+  font-family:sans-serif;
 }
 #memes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2.5em;
-  width: 80%;
-  grid-auto-flow: row;
+  column-count:3;
+  margin:25px;
 }
-
 img {
+  width: 30vw;
   max-width: 25em;
   cursor: pointer;
+  border:1px solid white;
 }
 
 img:hover {
+  transform:scale(1.03);
   box-shadow: 5px 5px 20px 15px #000;
 }
 
@@ -32,6 +31,7 @@ img:hover {
   justify-content: center;
   align-items: center;
   height: 20vh;
+  margin-bottom:15px;
 }
 
 button {
@@ -64,5 +64,32 @@ h4 {
   text-align: center;
   font-size: 1.75rem;
   text-transform: uppercase;
-  color: #fff;
+  color: beige;
+  margin:10px;
+}
+@media only screen and (max-width: 1000px) {
+  #memes {
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1vw;
+  text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #memes {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 4vw;
+  text-align: center;
+  }
+  img {
+    width: 100%;
+  }
 }
