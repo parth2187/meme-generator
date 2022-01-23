@@ -1,11 +1,9 @@
 # Deck Of Cards 
 #### by Team MediocreGun
-## Authors
+## List Of Features
 
-- [@Gundalf](https://github.com/TPX-Bob) - HTML
-- [@Parth](https://github.com/parth2187) - CSS
-- [@CometCoder192](https://github.com/CometCoder192) - JavaScript
-
+- Uses reddit's r/memes api
+- Added Pagination (Generate new memes on every click)
 
 ## Deployment
 
@@ -15,8 +13,14 @@ To open this project, click [here.](https://mediocregun.netlify.app/)
 ```
 
 
+## Authors
 
-## List Of Features
+- [@Gundalf](https://github.com/TPX-Bob) - HTML
+- [@Parth](https://github.com/parth2187) - CSS
+- [@CometCoder192](https://github.com/CometCoder192) - JavaScript
 
-- Uses reddit's r/memes api
-- Added Pagination (Generate new memes on every click)
+
+
+
+
+
