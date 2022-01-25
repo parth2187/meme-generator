@@ -1,4 +1,4 @@
-# Deck Of Cards 
+# Meme Generator
 #### by Team MediocreGun
 ## List Of Features
 
@@ -15,9 +15,9 @@ To open this project, click [here.](https://mediocregun.netlify.app/)
 
 ## Authors
 
-- [@Gundalf](https://github.com/TPX-Bob) - HTML
+- [@Gundalf](https://github.com/TPX-Bob) - HTML,CSS
 - [@Parth](https://github.com/parth2187) - CSS
-- [@CometCoder192](https://github.com/CometCoder192) - JavaScript
+- [@CometCoder192](https://github.com/CometCoder192) - JavaScript, CSS
 
 
 
