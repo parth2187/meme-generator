@@ -19,11 +19,13 @@ img {
   max-width: 25em;
   cursor: pointer;
   border:1px solid white;
+  opacity:0.95;
 }
-
 img:hover {
-  transform:scale(1.03);
   box-shadow: 5px 5px 20px 15px #000;
+  opacity:1;
+  transform:scale(1.03);
+  transition: 150ms;
 }
 
 .container {
