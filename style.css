@@ -1,4 +1,6 @@
 /* css resets */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Mochiy+Pop+P+One&family=Patrick+Hand&display=swap');
+
 * {
   margin:auto;
   box-sizing: border-box;
@@ -17,26 +19,74 @@ body {
 img {
   width: 30vw;
   max-width: 25em;
-  cursor: pointer;
+  cursor: default;
   border:1px solid white;
   opacity:0.95;
+  transition: 0.3s;
 }
 img:hover {
   box-shadow: 5px 5px 20px 15px #000;
   opacity:1;
   transform:scale(1.03);
-  transition: 150ms;
+  transition: 0.3s;
 }
-
+.text {
+  color: white;
+}
+h1 {
+  font-family: 'Mochiy Pop P One', monospace;
+  text-align: center;
+}
+h4 {
+  font-family: 'Patrick Hand', monospace;
+}
+p {
+  font-family: 'Patrick Hand', monospace;
+  font-size: 1.2rem;
+}
+.tik {
+  color:  #ff0050;
+  text-shadow: 2px 2px #00f2ea;
+  animation-name: colorChanger;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+}
+.tik:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+@keyframes colorChanger {
+  0% {
+  color:  #ff0050;
+  text-shadow: 2px 2px #00f2ea;
+  }
+  33%{
+  color: #ff0050;
+ text-shadow: 2.5px 2.5px 0px #00e6e6, 5px 5px 0px #01cccc, 7.5px 7.5px 0px #00bdbd;
+  }
+  66% {
+  color:  #ff0050;
+   text-shadow: -2.5px 2.5px 0px #00e6e6, -5px 5px 0px #01cccc, -7.5px 7.5px 0px #00bdbd;
+  }
+  100% {
+     color:  #ff0050;
+  text-shadow: 2px 2px #00f2ea; 
+  }
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 20vh;
   margin-bottom:15px;
 }
 
 button {
+  font-family: 'Mochiy Pop P One';
   display: inline-block;
   min-width: 130px;
   height: 40px;
@@ -51,6 +101,7 @@ button {
   border: none;
   background: #ef233c;
   box-shadow: 0 5px #d90429;
+  user-select: none;
 }
 
 button:hover {
@@ -69,6 +120,10 @@ h4 {
   color: beige;
   margin:10px;
 }
+.smaller {
+  font-size: 1.2rem;
+
+}
 @media only screen and (max-width: 1000px) {
   #memes {
 
@@ -80,6 +135,9 @@ h4 {
   }
   img {
     width: 100%;
+  }
+  .text {
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -93,5 +151,8 @@ h4 {
   }
   img {
     width: 100%;
+  }
+    .text {
+    display: none;
   }
 }
